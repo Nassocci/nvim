@@ -46,11 +46,10 @@ vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
-
--- vim.keymap.set("<Leader>n", ":NvimTreeToggle<CR>")
 end)
-
-vim.keymap.set("n", "<C-n>", ":NvimTreeFocus")
+-- NvimTreeToggle<CR>
+vim.keymap.set("n","<C-n>", ":NvimTreeToggle<CR>")
+-- vim.keymap.set("n", "<C-n>", ":NvimTreeFocus")
 
 -- barbar.nvim #start
 -- local map = vim.api.nvim_set_keymap

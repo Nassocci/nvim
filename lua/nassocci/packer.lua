@@ -7,6 +7,12 @@ vim.cmd.packadd('packer.nvim')
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
+  -- test
+  use "nvim-tree/nvim-web-devicons"
+  use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
+  use "tpope/vim-commentary"
+  use "JoosepAlviste/nvim-ts-context-commentstring"
+  -- test
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.0',
 	  -- or                            , branch = '0.1.x',
@@ -20,15 +26,6 @@ return require('packer').startup(function(use)
 		  vim.cmd('colorscheme rose-pine')
 	  end
   })
-  -- use ("nvim-tree/nvim-web-devicons")
-  -- use ({'romgrk/barbar.nvim', requires = 'nvim-web-devicons'})
-  -- use("tomtom/tcomment_vim")
-  -- use "tpope/vim-commentary"
-  -- use "JoosepAlviste/nvim-ts-context-commentstring"
-  -- use("MaxMEllon/vim-jsx-pretty")
-  -- use("pangloss/vim-javascript")
-  -- use("mxw/vim-jsx")
-  -- use("suy/vim-context-commentstring")
   use({"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"})
   use("nvim-treesitter/playground")
   use("theprimeagen/harpoon")
@@ -64,7 +61,7 @@ return require('packer').startup(function(use)
   use("eandrju/cellular-automaton.nvim")
   use("laytan/cloak.nvim")
   -- use{"preservim/nerdtree", run = ":TSUpdate"}
-  use "nvim-tree/nvim-web-devicons"
+
   use {
       'nvim-tree/nvim-tree.lua',
       requires = {
@@ -73,9 +70,7 @@ return require('packer').startup(function(use)
       tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
 
-  use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
-  use "tpope/vim-commentary"
-  use "JoosepAlviste/nvim-ts-context-commentstring"
+
 
 end)
 
