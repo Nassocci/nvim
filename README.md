@@ -1,8 +1,6 @@
-this is a test
-
 ThePrimeagen's init.lua\
 Prerequisite: install ripgrep.\
-The full video of me setting up this repo\
+The [full video](https://www.youtube.com/watch?v=w7i4amO_zaE) of me setting up this repo\
 
 
 For anyone that is interested in my vimrc, i will have a commit log below documenting each one of my commits (easy to C-f the change you want to know about though i would just suggest git log -S).\
