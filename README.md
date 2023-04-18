@@ -1,3 +1,5 @@
+# Nassocci #Test
+
 ThePrimeagen's init.lua\
 Prerequisite: install ripgrep.\
 The [full video](https://www.youtube.com/watch?v=w7i4amO_zaE) of me setting up this repo\

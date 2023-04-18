@@ -1,4 +1,4 @@
--- This file can be loaded by calling `lua require('plugins')` from your init.vim
+--tomtom/tcomment_vim" This file can be loaded by calling `lua require('plugins')` from your init.vim
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
@@ -20,9 +20,11 @@ return require('packer').startup(function(use)
 		  vim.cmd('colorscheme rose-pine')
 	  end
   })
+  -- use ("nvim-tree/nvim-web-devicons")
+  -- use ({'romgrk/barbar.nvim', requires = 'nvim-web-devicons'})
   -- use("tomtom/tcomment_vim")
-  use("tpope/vim-commentary")
-  use("JoosepAlviste/nvim-ts-context-commentstring")
+  -- use "tpope/vim-commentary"
+  -- use "JoosepAlviste/nvim-ts-context-commentstring"
   -- use("MaxMEllon/vim-jsx-pretty")
   -- use("pangloss/vim-javascript")
   -- use("mxw/vim-jsx")
@@ -62,6 +64,7 @@ return require('packer').startup(function(use)
   use("eandrju/cellular-automaton.nvim")
   use("laytan/cloak.nvim")
   -- use{"preservim/nerdtree", run = ":TSUpdate"}
+  use "nvim-tree/nvim-web-devicons"
   use {
       'nvim-tree/nvim-tree.lua',
       requires = {
@@ -69,5 +72,10 @@ return require('packer').startup(function(use)
       },
       tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
+
+  use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
+  use "tpope/vim-commentary"
+  use "JoosepAlviste/nvim-ts-context-commentstring"
+
 end)
 
