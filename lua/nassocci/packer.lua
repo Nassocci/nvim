@@ -21,6 +21,7 @@ return require('packer').startup(function(use)
 	  end
   })
 
+  use("tpope/vim-commentary")
   use({"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"})
   use("nvim-treesitter/playground")
   use("theprimeagen/harpoon")
@@ -28,7 +29,6 @@ return require('packer').startup(function(use)
   use("mbbill/undotree")
   use("tpope/vim-fugitive")
   use("nvim-treesitter/nvim-treesitter-context");
-
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v1.x',
@@ -63,6 +63,6 @@ return require('packer').startup(function(use)
           'nvim-tree/nvim-web-devicons', -- optional, for file icons
       },
       tag = 'nightly' -- optional, updated every week. (see issue #1193)
-  }  
+  }
 end)
 

@@ -47,4 +47,12 @@ vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 vim.keymap.set("n", "<C-n>", ":NvimTreeFocus")
+-- vim commentary
+
+
+
+
+
+
+
 end)
