@@ -49,7 +49,7 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 -- NvimTreeToggle<CR>
 vim.keymap.set("n","<leader>n", ":NvimTreeToggle<CR>")
--- vim.keymap.set("n", "<C-n>", ":NvimTreeFocus")
+vim.keymap.set("n", "<C-l>", ":LspRestart<CR>")
 
 -- barbar.nvim #start
 -- local map = vim.api.nvim_set_keymap
