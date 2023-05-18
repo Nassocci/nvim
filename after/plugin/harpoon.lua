@@ -11,6 +11,6 @@ vim.keymap.set("n", "<C-s>", function() ui.nav_file(4) end)
 
 require("harpoon").setup({
     menu = {
-        width = vim.api.nvim_win_get_width(0) - 80,
+        width = vim.api.nvim_win_get_width(0) - 95,
     }
 })
