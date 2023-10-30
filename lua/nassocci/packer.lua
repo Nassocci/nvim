@@ -14,25 +14,34 @@ return require('packer').startup(function(use)
   use "JoosepAlviste/nvim-ts-context-commentstring"
   -- test
   use {
-	  'nvim-telescope/telescope.nvim', tag = '0.1.0',
+	  'nvim-telescope/telescope.nvim', tag = '0.1.4',
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
-
-  use({
-	  'rose-pine/neovim',
-	  as = 'rose-pine',
-	  config = function()
-		  vim.cmd('colorscheme rose-pine')
-	  end
-  })
+  use { 'nvim-lua/popup.nvim' }
+  use { 'nvim-lua/plenary.nvim' }
+  -- use { 'nvim-telescope/telescope.nvim' }
+  use { 'nvim-telescope/telescope-media-files.nvim' }
   -- use({
-  --     'folke/tokyonight.nvim',
-  --     as = 'tokionight-night',
-  --     config = function()
-  --   	  vim.cmd('colorscheme tokyonight-night')
-  --     end
+    -- "dharmx/telescope-media.nvim",
+    -- config = function()
+      -- require("telescope").load_extension("media")
+    -- end,
   -- })
+  -- use({
+	  -- 'rose-pine/neovim',
+	  -- as = 'rose-pine',
+	  -- config = function()
+		  -- vim.cmd('colorscheme rose-pine')
+	  -- end
+  -- })
+  use({
+      'folke/tokyonight.nvim',
+      as = 'tokionight-storm',
+      config = function()
+    	  vim.cmd('colorscheme tokyonight-storm')
+      end
+  })
   use({"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"})
   use("nvim-treesitter/playground")
   use("theprimeagen/harpoon")
@@ -76,8 +85,9 @@ return require('packer').startup(function(use)
       },
       tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
-
-
+  -- Hydrovim -- python3 inside of nvim
+  -- pce of shit :)
+  -- use { 'MunifTanjim/nui.nvim' }
+  -- use { 'smzm/hydrovim' }
 
 end)
-

@@ -1,9 +1,12 @@
+-- local lspconfig = require('lspconfig')
+-- lspconfig.pyright.setup {}
 local lsp = require("lsp-zero")
 
 lsp.preset("recommended")
 
 lsp.ensure_installed({
   'tsserver',
+  'pyright',
   --'sumneko_lua',
   'rust_analyzer',
 })
