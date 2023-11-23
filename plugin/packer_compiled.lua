@@ -219,10 +219,10 @@ _G.packer_plugins = {
     path = "/home/nassocci/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["tokionight-storm"] = {
-    config = { "\27LJ\2\n@\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0!colorscheme tokyonight-storm\bcmd\bvim\0" },
+  ["tokionight-moon"] = {
+    config = { "\27LJ\2\n?\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0 colorscheme tokyonight-moon\bcmd\bvim\0" },
     loaded = true,
-    path = "/home/nassocci/.local/share/nvim/site/pack/packer/start/tokionight-storm",
+    path = "/home/nassocci/.local/share/nvim/site/pack/packer/start/tokionight-moon",
     url = "https://github.com/folke/tokyonight.nvim"
   },
   undotree = {
@@ -248,10 +248,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: tokionight-storm
-time([[Config for tokionight-storm]], true)
-try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0!colorscheme tokyonight-storm\bcmd\bvim\0", "config", "tokionight-storm")
-time([[Config for tokionight-storm]], false)
+-- Config for: tokionight-moon
+time([[Config for tokionight-moon]], true)
+try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0 colorscheme tokyonight-moon\bcmd\bvim\0", "config", "tokionight-moon")
+time([[Config for tokionight-moon]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
